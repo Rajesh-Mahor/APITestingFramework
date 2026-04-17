@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-17T16:23:58 IST" name="Default suite" finished-at="2026-04-17T16:24:17 IST" duration-ms="18684">
+    <groups>
+    </groups>
+    <test started-at="2026-04-17T16:23:58 IST" name="Default test" finished-at="2026-04-17T16:24:17 IST" duration-ms="18684">
+      <class name="api.testcases.UserTestWithExcelData">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:23:59 IST" name="testPostUser" data-provider="AllUserData" finished-at="2026-04-17T16:24:02 IST" duration-ms="2923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2020]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ram]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Shah]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test@1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:02 IST" name="testPostUser" data-provider="AllUserData" finished-at="2026-04-17T16:24:04 IST" duration-ms="1547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2021]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sham]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mishra]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test@2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4567]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2134567890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:04 IST" name="testPostUser" data-provider="AllUserData" finished-at="2026-04-17T16:24:05 IST" duration-ms="1534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2022]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Amol]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Patil]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test@3]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[7891]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[3124567890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testGetUserByName()[pri:2, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:05 IST" name="testGetUserByName" finished-at="2026-04-17T16:24:07 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testPostUser" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserByName -->
+        <test-method signature="testUpdateUserByName(java.lang.String)[pri:3, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:07 IST" name="testUpdateUserByName" data-provider="UserNameData" finished-at="2026-04-17T16:24:10 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testGetUserByName" duration-ms="2794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserByName -->
+        <test-method signature="testUpdateUserByName(java.lang.String)[pri:3, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:10 IST" name="testUpdateUserByName" data-provider="UserNameData" finished-at="2026-04-17T16:24:13 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testGetUserByName" duration-ms="3070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserByName -->
+        <test-method signature="testUpdateUserByName(java.lang.String)[pri:3, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:13 IST" name="testUpdateUserByName" data-provider="UserNameData" finished-at="2026-04-17T16:24:16 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testGetUserByName" duration-ms="2763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserByName -->
+        <test-method signature="testDeleteUserByName()[pri:4, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:16 IST" name="testDeleteUserByName" finished-at="2026-04-17T16:24:17 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testUpdateUserByName" duration-ms="1228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserByName -->
+      </class> <!-- api.testcases.UserTestWithExcelData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
