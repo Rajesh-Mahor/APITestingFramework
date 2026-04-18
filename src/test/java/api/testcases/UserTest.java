@@ -1,5 +1,7 @@
 package api.testcases;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -11,6 +13,8 @@ import api.payload.User;
 import io.restassured.response.Response;
 
 public class UserTest {
+	
+	static Logger logger = LogManager.getLogger(UserTest.class);
 	
 	public Faker fake;
 	public User userPayload;
@@ -30,7 +34,7 @@ public class UserTest {
 		userPayload.setPhone(fake.phoneNumber().cellPhone());
 		userPayload.setUserStatus(0);
 		
-		System.out.println("User Data created: " + userPayload.getUsername());
+		logger.info("User Data created: " + userPayload.getUsername());
 		
 	}
 	
@@ -39,7 +43,7 @@ public class UserTest {
 		
 		Response response = UserEndpoints.createUser(userPayload);
 		
-		System.out.println("Response for Post User");
+		logger.info("Response for Post User");
 		
 		response.then().log().all();		
 		
@@ -52,7 +56,7 @@ public class UserTest {
 		
 		Response response = UserEndpoints.getUser(userPayload.getUsername());
 		
-		System.out.println("Response for Get User");
+		logger.info("Response for Get User");
 		
 		response.then().log().all();		
 		
@@ -69,7 +73,7 @@ public class UserTest {
 		
 		Response response = UserEndpoints.updateUser(userPayload, userPayload.getUsername());
 		
-		System.out.println("Response for Update User");
+		logger.info("Response for Update User");
 		
 		response.then().log().all();		
 		
@@ -80,7 +84,7 @@ public class UserTest {
 		
 		Response responseAfterUpdate = UserEndpoints.getUser(userPayload.getUsername());
 		
-		System.out.println("Response for Get User After Update");
+		logger.info("Response for Get User After Update");
 		
 		responseAfterUpdate.then().log().all();
 	}
@@ -90,7 +94,7 @@ public class UserTest {
 		
 		Response response = UserEndpoints.deleteUser(userPayload.getUsername());
 		
-		System.out.println("Response for Delete User");
+		logger.info("Response for Delete User");
 		
 		response.then().log().all();		
 		

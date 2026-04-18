@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>       
+        <RollingFile name="RollingFile"
+                fileName="RestAPITestingLogs/test.log"
+				filePattern="RestAPITestingLogs/test-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %X{logid} %c{1}:%L - %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <!-- Roll daily -->
+                <TimeBasedTriggeringPolicy />
+                <!-- Roll when file reaches 10MB -->
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <!-- Keep max 30 files -->
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+		
+		<!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout 
+                pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %X{logid} %c{1}:%L - %m%n"/>
+        </Console>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+			<AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

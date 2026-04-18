@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-17T16:23:58 IST" name="Default suite" finished-at="2026-04-17T16:24:17 IST" duration-ms="18684">
+  <suite started-at="2026-04-18T15:52:50 IST" name="Default suite" finished-at="2026-04-18T15:53:19 IST" duration-ms="28316">
     <groups>
     </groups>
-    <test started-at="2026-04-17T16:23:58 IST" name="Default test" finished-at="2026-04-17T16:24:17 IST" duration-ms="18684">
+    <test started-at="2026-04-18T15:52:50 IST" name="Default test" finished-at="2026-04-18T15:53:19 IST" duration-ms="28316">
       <class name="api.testcases.UserTestWithExcelData">
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:23:59 IST" name="testPostUser" data-provider="AllUserData" finished-at="2026-04-17T16:24:02 IST" duration-ms="2923" status="PASS">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.testcases.UserTestWithExcelData@64b73e7a]" started-at="2026-04-18T15:52:52 IST" name="testPostUser" data-provider="AllUserData" finished-at="2026-04-18T15:52:56 IST" duration-ms="4419" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:02 IST" name="testPostUser" data-provider="AllUserData" finished-at="2026-04-17T16:24:04 IST" duration-ms="1547" status="PASS">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.testcases.UserTestWithExcelData@64b73e7a]" started-at="2026-04-18T15:52:56 IST" name="testPostUser" data-provider="AllUserData" finished-at="2026-04-18T15:52:59 IST" duration-ms="2482" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:04 IST" name="testPostUser" data-provider="AllUserData" finished-at="2026-04-17T16:24:05 IST" duration-ms="1534" status="PASS">
+        <test-method signature="testPostUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.testcases.UserTestWithExcelData@64b73e7a]" started-at="2026-04-18T15:52:59 IST" name="testPostUser" data-provider="AllUserData" finished-at="2026-04-18T15:53:01 IST" duration-ms="2659" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,11 +130,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostUser -->
-        <test-method signature="testGetUserByName()[pri:2, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:05 IST" name="testGetUserByName" finished-at="2026-04-17T16:24:07 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testPostUser" duration-ms="1527" status="PASS">
+        <test-method signature="testGetUserByName()[pri:2, instance:api.testcases.UserTestWithExcelData@64b73e7a]" started-at="2026-04-18T15:53:01 IST" name="testGetUserByName" finished-at="2026-04-18T15:53:03 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testPostUser" duration-ms="1936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUserByName -->
-        <test-method signature="testUpdateUserByName(java.lang.String)[pri:3, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:07 IST" name="testUpdateUserByName" data-provider="UserNameData" finished-at="2026-04-17T16:24:10 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testGetUserByName" duration-ms="2794" status="PASS">
+        <test-method signature="testUpdateUserByName(java.lang.String)[pri:3, instance:api.testcases.UserTestWithExcelData@64b73e7a]" started-at="2026-04-18T15:53:03 IST" name="testUpdateUserByName" data-provider="UserNameData" finished-at="2026-04-18T15:53:08 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testGetUserByName" duration-ms="4327" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUserByName -->
-        <test-method signature="testUpdateUserByName(java.lang.String)[pri:3, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:10 IST" name="testUpdateUserByName" data-provider="UserNameData" finished-at="2026-04-17T16:24:13 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testGetUserByName" duration-ms="3070" status="PASS">
+        <test-method signature="testUpdateUserByName(java.lang.String)[pri:3, instance:api.testcases.UserTestWithExcelData@64b73e7a]" started-at="2026-04-18T15:53:08 IST" name="testUpdateUserByName" data-provider="UserNameData" finished-at="2026-04-18T15:53:12 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testGetUserByName" duration-ms="4209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUserByName -->
-        <test-method signature="testUpdateUserByName(java.lang.String)[pri:3, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:13 IST" name="testUpdateUserByName" data-provider="UserNameData" finished-at="2026-04-17T16:24:16 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testGetUserByName" duration-ms="2763" status="PASS">
+        <test-method signature="testUpdateUserByName(java.lang.String)[pri:3, instance:api.testcases.UserTestWithExcelData@64b73e7a]" started-at="2026-04-18T15:53:12 IST" name="testUpdateUserByName" data-provider="UserNameData" finished-at="2026-04-18T15:53:16 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testGetUserByName" duration-ms="4492" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateUserByName -->
-        <test-method signature="testDeleteUserByName()[pri:4, instance:api.testcases.UserTestWithExcelData@368f2016]" started-at="2026-04-17T16:24:16 IST" name="testDeleteUserByName" finished-at="2026-04-17T16:24:17 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testUpdateUserByName" duration-ms="1228" status="PASS">
+        <test-method signature="testDeleteUserByName()[pri:4, instance:api.testcases.UserTestWithExcelData@64b73e7a]" started-at="2026-04-18T15:53:16 IST" name="testDeleteUserByName" finished-at="2026-04-18T15:53:19 IST" depends-on-methods="api.testcases.UserTestWithExcelData.testUpdateUserByName" duration-ms="2249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUserByName -->

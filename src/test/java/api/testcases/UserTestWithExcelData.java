@@ -1,13 +1,16 @@
 package api.testcases;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import api.endpoint.UserEndpoints;
 import api.payload.User;
 import io.restassured.response.Response;
 
 public class UserTestWithExcelData {
+	
+static Logger logger = LogManager.getLogger(UserTestWithExcelData.class);
 
 	public User userPayload;
 
@@ -25,11 +28,11 @@ public class UserTestWithExcelData {
 		userPayload.setPhone(Phone);
 		userPayload.setUserStatus(0);
 
-		System.out.println("User Data created: " + userPayload.getUsername());
+		logger.info("User Data created: " + userPayload.getUsername());
 
 		Response response = UserEndpoints.createUser(userPayload);
 
-		System.out.println("Response for Post User");
+		logger.info("Response for Post User");
 
 		response.then().log().all();
 
@@ -43,7 +46,7 @@ public class UserTestWithExcelData {
 
 		Response response = UserEndpoints.getUser(userPayload.getUsername());
 
-		System.out.println("Response for Get User");
+		logger.info("Response for Get User");
 
 		response.then().log().all();
 
@@ -60,7 +63,7 @@ public class UserTestWithExcelData {
 
 		Response response = UserEndpoints.updateUser(userPayload, userPayload.getUsername());
 
-		System.out.println("Response for Update User");
+		logger.info("Response for Update User");
 
 		response.then().log().all();
 
@@ -71,7 +74,7 @@ public class UserTestWithExcelData {
 
 		Response responseAfterUpdate = UserEndpoints.getUser(userPayload.getUsername());
 
-		System.out.println("Response for Get User After Update");
+		logger.info("Response for Get User After Update");
 
 		responseAfterUpdate.then().log().all();
 	}
@@ -81,7 +84,7 @@ public class UserTestWithExcelData {
 
 		Response response = UserEndpoints.deleteUser(userPayload.getUsername());
 
-		System.out.println("Response for Delete User");
+		logger.info("Response for Delete User");
 
 		response.then().log().all();
 
