@@ -1,0 +1,36 @@
+2026-04-18 15:51:27 INFO   UserTest:37 - User Data created: danial.purdy
+2026-04-18 15:51:31 INFO   UserEndpoints:24 - Create User Response
+2026-04-18 15:51:31 INFO   UserTest:46 - Response for Post User
+2026-04-18 15:51:33 INFO   UserEndpoints:39 - Get User Response
+2026-04-18 15:51:33 INFO   UserTest:59 - Response for Get User
+2026-04-18 15:51:36 INFO   UserEndpoints:56 - Update User Response
+2026-04-18 15:51:36 INFO   UserTest:76 - Response for Update User
+2026-04-18 15:51:38 INFO   UserEndpoints:39 - Get User Response
+2026-04-18 15:51:38 INFO   UserTest:87 - Response for Get User After Update
+2026-04-18 15:51:40 INFO   UserEndpoints:71 - Delete User Response
+2026-04-18 15:51:40 INFO   UserTest:97 - Response for Delete User
+2026-04-18 15:52:52 INFO   UserTestWithExcelData:31 - User Data created: user1
+2026-04-18 15:52:56 INFO   UserEndpoints:24 - Create User Response
+2026-04-18 15:52:56 INFO   UserTestWithExcelData:35 - Response for Post User
+2026-04-18 15:52:56 INFO   UserTestWithExcelData:31 - User Data created: user2
+2026-04-18 15:52:59 INFO   UserEndpoints:24 - Create User Response
+2026-04-18 15:52:59 INFO   UserTestWithExcelData:35 - Response for Post User
+2026-04-18 15:52:59 INFO   UserTestWithExcelData:31 - User Data created: user3
+2026-04-18 15:53:01 INFO   UserEndpoints:24 - Create User Response
+2026-04-18 15:53:01 INFO   UserTestWithExcelData:35 - Response for Post User
+2026-04-18 15:53:03 INFO   UserEndpoints:39 - Get User Response
+2026-04-18 15:53:03 INFO   UserTestWithExcelData:49 - Response for Get User
+2026-04-18 15:53:06 INFO   UserEndpoints:56 - Update User Response
+2026-04-18 15:53:06 INFO   UserTestWithExcelData:66 - Response for Update User
+2026-04-18 15:53:08 INFO   UserEndpoints:39 - Get User Response
+2026-04-18 15:53:08 INFO   UserTestWithExcelData:77 - Response for Get User After Update
+2026-04-18 15:53:10 INFO   UserEndpoints:56 - Update User Response
+2026-04-18 15:53:10 INFO   UserTestWithExcelData:66 - Response for Update User
+2026-04-18 15:53:12 INFO   UserEndpoints:39 - Get User Response
+2026-04-18 15:53:12 INFO   UserTestWithExcelData:77 - Response for Get User After Update
+2026-04-18 15:53:14 INFO   UserEndpoints:56 - Update User Response
+2026-04-18 15:53:14 INFO   UserTestWithExcelData:66 - Response for Update User
+2026-04-18 15:53:16 INFO   UserEndpoints:39 - Get User Response
+2026-04-18 15:53:16 INFO   UserTestWithExcelData:77 - Response for Get User After Update
+2026-04-18 15:53:19 INFO   UserEndpoints:71 - Delete User Response
+2026-04-18 15:53:19 INFO   UserTestWithExcelData:87 - Response for Delete User
