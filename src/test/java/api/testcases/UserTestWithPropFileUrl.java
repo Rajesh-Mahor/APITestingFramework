@@ -1,0 +1,100 @@
+package api.testcases;
+
+import java.io.IOException;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import api.endpoint.UserEndpointFromProp;
+import api.endpoint.UserEndpoints;
+import api.payload.User;
+import io.restassured.response.Response;
+
+public class UserTestWithPropFileUrl {
+
+	static Logger logger = LogManager.getLogger(UserTestWithExcelData.class);
+
+	public User userPayload;
+
+	@Test(priority = 1, dataProvider = "AllUserData", dataProviderClass = api.utilities.DataProvider.class)
+	public void testPostUser(String userID, String UserName, String FirstName, String LastName, String Email,
+			String Password, String Phone) throws IOException {
+
+		userPayload = new User();
+		userPayload.setId(Integer.parseInt(userID));
+		userPayload.setUsername(UserName);
+		userPayload.setFirstName(FirstName);
+		userPayload.setLastName(LastName);
+		userPayload.setEmail(Email);
+		userPayload.setPassword(Password);
+		userPayload.setPhone(Phone);
+		userPayload.setUserStatus(0);
+
+		logger.info("User Data created: " + userPayload.getUsername());
+
+		Response response = UserEndpointFromProp.createUser(userPayload);
+
+		logger.info("Response for Post User");
+
+		response.then().log().all();
+
+		// Validate the response
+		Assert.assertEquals(response.getStatusCode(), 200);
+
+	}
+
+	@Test(priority = 2, dependsOnMethods = "testPostUser")
+	public void testGetUserByName() {
+
+		Response response = UserEndpointFromProp.getUser(userPayload.getUsername());
+
+		logger.info("Response for Get User");
+
+		response.then().log().all();
+
+		// Validate the response
+		Assert.assertEquals(response.getStatusCode(), 200);
+
+	}
+
+	@Test(priority = 3, dependsOnMethods = "testGetUserByName", dataProvider = "UserNameData", dataProviderClass = api.utilities.DataProvider.class)
+	public void testUpdateUserByName(String UserNameData) {
+
+		// Update the user details
+		userPayload.setFirstName(UserNameData);
+
+		Response response = UserEndpointFromProp.updateUser(userPayload, userPayload.getUsername());
+
+		logger.info("Response for Update User");
+
+		response.then().log().all();
+
+		// Validate the response
+		Assert.assertEquals(response.getStatusCode(), 200);
+
+		// Check User updated Or Not
+
+		Response responseAfterUpdate = UserEndpoints.getUser(userPayload.getUsername());
+
+		logger.info("Response for Get User After Update");
+
+		responseAfterUpdate.then().log().all();
+	}
+
+	@Test(priority = 4, dependsOnMethods = "testUpdateUserByName")
+	public void testDeleteUserByName() {
+
+		Response response = UserEndpointFromProp.deleteUser(userPayload.getUsername());
+
+		logger.info("Response for Delete User");
+
+		response.then().log().all();
+
+		// Validate the response
+		Assert.assertEquals(response.getStatusCode(), 200);
+
+	}
+	
+}

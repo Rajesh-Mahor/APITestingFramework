@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.testcases.UserTestWithExcelData">
+      <class name="api.testcases.UserTestWithPropFileUrl">
         <methods>
           <include name="testPostUser"/>
-          <include name="testUpdateUserByName"/>
           <include name="testDeleteUserByName"/>
           <include name="testGetUserByName"/>
+          <include name="testUpdateUserByName" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- api.testcases.UserTestWithExcelData -->
+      </class> <!-- api.testcases.UserTestWithPropFileUrl -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
